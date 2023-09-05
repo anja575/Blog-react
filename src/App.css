@@ -41,34 +41,34 @@
 }
 
 .navBar {
-  width: 100%;
-  height: 100px;
-  background: #ee9ca7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #eeb2b9, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #eeb2b9, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: flex;
   flex-direction: row;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
+  background-color: #821D30;
+  align-items: center;
+  min-height: 40px;
+  padding-left: 25px;
+  font-size: large;
 }
 
-.Links{
-  padding: 40px;
-}
+
 
 .navBar a {
-  float: left; /* Poravnanje linkova sa leve strane */
-  display: block; /* Blok elementi za celi red linkova */
-  color: white; /* Boja teksta */
-  text-align: center; /* Poravnanje teksta u centar */
-  padding: 14px 14px; /* Podešavanje razmaka između linkova */
-  text-decoration: none; /* Uklonite podvučen tekst */
+  float: left; 
+  display: block; 
+  color: white; 
+  text-align: center; 
+  padding: 14px 14px; 
+  text-decoration: none; 
 }
 
+.navBar a:hover{
+  color: #FFC5D0;
+}
+
+
 .footer {
-  background-color: grey;
-  color: black;
+  background-color: #821D30;
+  color: white;
   padding:20px;
   text-align: center;
   position:fixed;
@@ -77,7 +77,7 @@
 }
 
 .knjige {
-  background: black;
+  background: #FFC5D0;
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -93,7 +93,6 @@
 }
 
 .knjiga {
-  border-radius: 50px;
   width: 300px;
   height: 350px;
   margin: 30px;
@@ -104,18 +103,19 @@
 }
 
 .razmak{
+  border-radius: 50px;
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
-  border: red;
-  border-style: dotted;
+  border: #821D30;
+  border-style: dashed;
   padding: 10px;
   background: white; 
 }
 
 .opis{
-  color: red;
+  color: #821D30;
   font-size: 15px;
   padding: 20px;
 }
