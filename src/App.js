@@ -95,7 +95,6 @@ function App() {
   }
 
   function dodajDugme(naziv, id) {
-
     knjige.forEach((knjiga) => {
       if (knjiga.id === id) {
         if(knjiga.omiljena > 0) {
@@ -109,33 +108,23 @@ function App() {
         }
       }
     });
-
     omiljene();
-
-
   }
 
   function izbaciDugme(id) {
-
     knjige.forEach((knjiga) => {
       if (knjiga.id === id) {
         knjiga.omiljena = 0;
       }
     });
-
     omiljene();
-
-
   }
   
   const [drame, dodajUDrame] = useState(knjige.filter((knjiga) => knjiga.zanr === 'Drama'));
   const [romani, dodajURomane] = useState(knjige.filter((knjiga) => knjiga.zanr === 'Roman'));
 
-
-
   return (
     <div className="App">
-   
     <Router>
       <NavBar />
         <Routes>
@@ -147,7 +136,6 @@ function App() {
         </Routes>
       <Footer /> 
     </Router>
-
   </div>
   );
 }

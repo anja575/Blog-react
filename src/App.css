@@ -160,7 +160,6 @@ body {
 
 
 .pocetna {
-  
   font-size: xx-large;
   justify-content: center;
   list-style: none;
@@ -171,11 +170,12 @@ body {
 .pocetna ul {
   list-style: none;
 }
+
 .pocetna li {
   justify-content: center;
   margin-right: 20px;
   margin-bottom: 20px;
-  border: 5px solid #821D30; /* Dodajte okvir oko svakog elementa liste */
+  border: 5px solid #821D30;
   padding: 10px;
   border-style: dashed;
   border-radius: 15px;
