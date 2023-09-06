@@ -145,3 +145,54 @@
   color: #821D30;
 }
 
+
+body {
+  background-color: #FFC5D0;
+}
+
+.naslov {
+  color: white;
+}
+
+.naslov:hover {
+  color: #821D30;
+}
+
+
+.pocetna {
+  
+  font-size: xx-large;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.pocetna ul {
+  list-style: none;
+}
+.pocetna li {
+  justify-content: center;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 5px solid #821D30; /* Dodajte okvir oko svakog elementa liste */
+  padding: 10px;
+  border-style: dashed;
+  border-radius: 15px;
+}
+
+.pocetna a {
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.pocetna a:hover {
+  color: #821D30;
+}
+
+
+
+
+

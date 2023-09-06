@@ -17,6 +17,7 @@ import h from './slike/hamlet.png'
 import k from './slike/kostana.png'
 import upziv from './slike/upotrazizaizgubljenimvremeno.png'
 import rim from './slike/ratimir.png'
+import Pocetna from './stranice/Pocetna';
 
 
 function App() {
@@ -138,7 +139,8 @@ function App() {
     <Router>
       <NavBar />
         <Routes>
-          <Route path="/" element={<SveKnjige   sveknjige={knjige} dodajDugme = {dodajDugme} omiljeneIliNe = {0}/>}/>
+          <Route path="/" element={<Pocetna/>}/>
+          <Route path="/knjige" element={<SveKnjige   sveknjige={knjige} dodajDugme = {dodajDugme} omiljeneIliNe = {0}/>}/>
           <Route path="/drame" element={<Drame  drame={drame} dodajDugme = {dodajDugme} omiljeneIliNe = {0} />}/>
           <Route path="/romani" element={<Romani romani={romani} dodajDugme = {dodajDugme} omiljeneIliNe = {0}/>}/>
           <Route path="/omiljene" element={<Omiljene omiljene = {omiljeneKnjige} omiljeneIliNe = {1} izbaciDugme={izbaciDugme}/>}/>
