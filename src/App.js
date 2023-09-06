@@ -18,6 +18,9 @@ import k from './slike/kostana.png'
 import upziv from './slike/upotrazizaizgubljenimvremeno.png'
 import rim from './slike/ratimir.png'
 import Pocetna from './stranice/Pocetna';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 function App() {
@@ -98,12 +101,14 @@ function App() {
     knjige.forEach((knjiga) => {
       if (knjiga.id === id) {
         if(knjiga.omiljena > 0) {
-          console.log("Knjiga je vec dodata u omiljene.");
+          console.log("Knjiga " + knjiga.naziv + " je vec dodata u omiljene.");
+          toast.success("Knjiga " + knjiga.naziv + " je već dodata u omiljene.");
           return;
         }
         else {
           knjiga.omiljena++;
           console.log("Knjiga " + knjiga.naziv + " je dodata u omiljene!");
+          toast.success("Knjiga " + knjiga.naziv + " je dodata u omiljene!");
           
         }
       }
@@ -115,6 +120,7 @@ function App() {
     knjige.forEach((knjiga) => {
       if (knjiga.id === id) {
         knjiga.omiljena = 0;
+        toast.success("Knjiga " + knjiga.naziv + " je izbačena iz omiljenih!");
       }
     });
     omiljene();
@@ -126,6 +132,7 @@ function App() {
   return (
     <div className="App">
     <Router>
+    <ToastContainer position="bottom-right" autoClose={3000} />
       <NavBar />
         <Routes>
           <Route path="/" element={<Pocetna/>}/>

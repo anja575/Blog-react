@@ -42,23 +42,23 @@
 
 .navBar {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   background-color: #821D30;
   align-items: center;
   min-height: 40px;
-  padding-left: 25px;
+  padding: 0px;
   font-size: large;
+  width: 100%;
+  margin: 0px;
 }
 
-
-
 .navBar a {
-  float: left; 
-  display: block; 
-  color: white; 
-  text-align: center; 
-  padding: 14px 14px; 
-  text-decoration: none; 
+  flex: 1;
+  color: white;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  max-width: 20%;
 }
 
 .navBar a:hover{
@@ -84,7 +84,7 @@
 }
 
 .sve-knjige {
-  position: center;
+   position: center;
     width: 100%;
     height: auto;
     display: grid;
@@ -103,6 +103,7 @@
 }
 
 .razmak{
+  flex-wrap: wrap;
   border-radius: 50px;
   margin-top: 20px;
   margin-left: 20px;
@@ -113,6 +114,8 @@
   padding: 10px;
   background: white; 
 }
+
+
 
 .opis{
   color: #821D30;
@@ -234,5 +237,6 @@ body {
   margin-right: 40px;
 
 }
+
 
 
