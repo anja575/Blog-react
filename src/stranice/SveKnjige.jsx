@@ -10,7 +10,6 @@ const SveKnjige = ({ sveknjige, dodajDugme, omiljeneIliNe}) => {
     postaviKnjige(sortiraneKnjige);
   };
 
-
   const pretrazi = (rec) => {
     const filtriraneKnjige = sveknjige.filter((knjiga) =>
       knjiga.naziv.toLowerCase().includes(rec.toLowerCase())
@@ -26,7 +25,7 @@ const SveKnjige = ({ sveknjige, dodajDugme, omiljeneIliNe}) => {
      placeholder="Pretraži knjige po nazivu"
      onChange={(e) => pretrazi(e.target.value)}
     />
-    <button className= 'dugmeSortiraj' onClick={sortirajKnjige}>Sortiraj komponente</button>
+    <button className= 'dugmeSortiraj' onClick={sortirajKnjige}>Sortiraj knjige prema nazivu</button>
     </div>
     <div className="sve-knjige">
     {knjige.map((knjiga) => (

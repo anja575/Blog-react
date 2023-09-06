@@ -22,7 +22,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-
 function App() {
   const [omiljeneKnjige, dodajUOmiljene] = useState([]);
   const [knjige] = useState([
@@ -35,13 +34,13 @@ function App() {
     }, {
       id: 2,
       naziv: "Romeo i Julija",
-      pisac: "Vilijam Sekspir",
+      pisac: "Vilijam Šekspir",
       zanr: "Drama",
       slika: rij,
       omiljena: 0,
     },{
       id: 3,
-      naziv: "Zlocin i kazna",
+      naziv: "Zločin i kazna",
       pisac: "Fjodor Dostojevski",
       zanr: "Roman",
       slika: zik,
@@ -55,8 +54,8 @@ function App() {
       omiljena: 0,
     },{
       id: 5,
-      naziv: "Kostana",
-      pisac: "Borisav Stankovic",
+      naziv: "Koštana",
+      pisac: "Borisav Stanković",
       zanr: "Drama",
       slika: k,
       omiljena: 0,
@@ -70,7 +69,7 @@ function App() {
     }, {
       id: 7,
       naziv: "Hamlet",
-      pisac: "Vilijam Sespir",
+      pisac: "Vilijam Šekspir",
       zanr: "Drama",
       slika: h,
       omiljena: 0,

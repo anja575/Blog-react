@@ -10,11 +10,11 @@ function NavBar() {
   return (
     <div className="navBar">
     <div className="Links">
-            <Link to="/"> Pocetna strana  <AiOutlineHome/> </Link>
+            <Link to="/"> Početna strana  <AiOutlineHome/> </Link>
             <Link to ="/knjige"> Sve knjige <BsBook/> </Link>
             <Link to='/romani'> Romani <BiBookHeart/> </Link>
             <Link to='/drame'> Drame <BiBook/> </Link>
-            <Link to="/omiljene"> Omiljene  <AiOutlineHeart/> </Link>
+            <Link to="/omiljene"> Omiljene knjige <AiOutlineHeart/> </Link>
         </div>
     </div>
     

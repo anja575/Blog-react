@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 function Pocetna() {
   return (
-    <div className='pocetnaa'>
-    <h1 className='naslov'>DOBRODOSLI U NASU KNJIZARU!</h1>
-        <h2 className='naslov'>Pogledajte nasu ponudu!</h2>
+    <div>
+    <h1 className='naslov'>DOBRODOŠLI U NAŠU KNJIŽARU!</h1>
+        <h2 className='naslov'>Pogledajte našu ponudu!</h2>
     <div className='pocetna'>
         
         <ul>
@@ -19,7 +19,7 @@ function Pocetna() {
           <Link to="/romani">Romani</Link>
         </li>
         <li>
-          <Link to="/omiljene">Omiljene</Link>
+          <Link to="/omiljene">Omiljene knjige</Link>
         </li>
       </ul>
       </div>

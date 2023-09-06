@@ -1,10 +1,7 @@
 import React from 'react'
 
 function Knjiga({knjiga, dodajDugme, omiljeneIliNe, izbaciDugme}) {
-    
-
   return (
-
 
     <div className="razmak">
     <div className='knjiga'>
@@ -14,9 +11,8 @@ function Knjiga({knjiga, dodajDugme, omiljeneIliNe, izbaciDugme}) {
         <h3>{knjiga.pisac}</h3>
         <p>{knjiga.zanr}</p>
         </div>
-        
-        
     </div>
+
     {omiljeneIliNe === 0 ? (
         
     <button
@@ -36,7 +32,6 @@ function Knjiga({knjiga, dodajDugme, omiljeneIliNe, izbaciDugme}) {
     
     }
      
-
     </div>
   )
 }

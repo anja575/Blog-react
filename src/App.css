@@ -65,7 +65,6 @@
   color: #FFC5D0;
 }
 
-
 .footer {
   background-color: #821D30;
   color: white;
@@ -115,8 +114,6 @@
   background: white; 
 }
 
-
-
 .opis{
   color: #821D30;
   font-size: 15px;
@@ -148,7 +145,6 @@
   color: #821D30;
 }
 
-
 body {
   background-color: #FFC5D0;
 }
@@ -160,7 +156,6 @@ body {
 .naslov:hover {
   color: #821D30;
 }
-
 
 .pocetna {
   font-size: xx-large;
@@ -195,11 +190,10 @@ body {
   color: #821D30;
 }
 
-
 .dugmeSortiraj {
   color: #FB6090;
   background: white;
-  width: 200px;
+  width: 300px;
   height: 40px;
   font-size: 20px;
   border-radius: 15px;
